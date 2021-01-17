@@ -37,7 +37,7 @@ Vul hier je idee in.
 
                 <img src="pics/shopping.png" id="shopping">
                 <p class="bold" id="shoppingshare">Deel dit project</p>
-                <button class="primarybutton4"><a href="" class="buttontext">Klik hier</a></button>
+                <button class="primarybutton4"><a  class="buttontext" onclick="showShareLinks()">Klik hier</a></button>
 
 
             </div>
@@ -69,6 +69,18 @@ Vul hier je idee in.
                         <a href="https://www.zoetermeer.nl/inwoners/producten-a-z_45918/product/nieuwsbrieven-aanmelden_1177.html?pk_campaign=Redirects&pk_kwd=nieuwsbrieven">Gemeente Zoetermeer</a><a class="button2" target="_blank" href="https://www.zoetermeer.nl/inwoners/producten-a-z_45918/product/nieuwsbrieven-aanmelden_1177.html?pk_campaign=Redirects&pk_kwd=nieuwsbrieven">Klik hier</a>
                         <br><br>
                         <a href="https://zoetermeer.nieuws.nl/nieuwsbrief/">Zoetermeer Nieuws</a><a class="button2" target="_blank" href="https://zoetermeer.nieuws.nl/nieuwsbrief/">Klik hier</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="popup3" id="myPopup3">
+                <div class="popuptext">
+                    <h2>Deel dit project</h2> <img src="pics/close3.png" class="closeimg" onclick="showShareLinks()">
+                    <p class="bold">Hier vind je links om dit project te delen
+                        <br><br>
+                        <li><a target="blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fyannickkok.github.io%2FStadslab-Meerzicht%2Fwinkelcentrum.html">Deel op Facebook</a></li>
+                        <li><a target="blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fyannickkok.github.io%2FStadslab-Meerzicht%2Fwinkelcentrum.html">Deel op Twitter</a></li>
+                        <li><a target="blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fyannickkok.github.io%2FStadslab-Meerzicht%2Fwinkelcentrum.html">Deel op LinkedIn</a></li>
                     </p>
                 </div>
             </div>
@@ -124,17 +136,19 @@ Vul hier je idee in.
             // When the user clicks on div, open the popup
             function myFunction() {
               var popup = document.getElementById("myPopup");
-              
-              popup.classList.toggle("show");
-              
-
-
+              popup.classList.toggle("show");             
             }
+
             function showNewsletters() {
                 var popup2 = document.getElementById("myPopup2");
                 popup2.classList.toggle("show");
-
             }
+
+            function showShareLinks() {
+                var popup3 = document.getElementById("myPopup3");
+                popup3.classList.toggle("show");
+            }
+
         </script>
 
     </body>

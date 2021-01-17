@@ -57,17 +57,59 @@ Or use the online form by clicking the button at the bottom right of the page.
                 <button class="primarybutton3"><a href="shopping2.html" class="buttontext">Let us know</a></button>
 
             </div>
-
             <div class="mainboxshopping2">
 
                 <img src="pics/shopping.png" id="shopping">
                 <p class="bold" id="shoppingshare">Share this project</p>
-                <button class="primarybutton4"><a href="" class="buttontext">Click here</a></button>
+                <button class="primarybutton4"><a  class="buttontext" onclick="showShareLinks()">Click here</a></button>
 
 
             </div>
 
-           
+            <div class="popup" id="myPopup">
+                <div class="popuptext" >
+                    <h2>Social Media</h2> <img src="pics/close3.png" class="closeimg" onclick="myFunction()">
+                    
+                    <p class="bold">Here you will find an overview of local social media
+                        <br><br>
+                        <a href="https://nl-nl.facebook.com/gemeentezoetermeer">Zoetermeer Municipality</a><a class="button2" target="_blank" href="https://nl-nl.facebook.com/gemeentezoetermeer">Click here</a>
+                        <br><br>
+                        <a href="https://www.instagram.com/biebzoetermeer/">Zoetermeer Library</a><a class="button2" target="_blank" href="https://www.instagram.com/biebzoetermeer/">Click here</a>
+                        <br><br>
+                        <a href="https://twitter.com/ZoetermeerVndg">Zoetermeer News</a><a class="button2" target="_blank" href="https://twitter.com/ZoetermeerVndg">Click here</a>
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="popup2" id="myPopup2">
+                <div class="popuptext" >
+                    <h2>Nieuwsbrieven</h2> <img src="pics/close3.png" class="closeimg" onclick="showNewsletters()">
+
+                    <p class="bold">Here you will find an overview of local newsletters
+                        <br><br>
+                        <a href="http://www.waterbuurtvereniging.nl/vereniging/nieuwsbrief.htm">Waterbuurt residents association</a><a class="button2" target="_blank" href="http://www.waterbuurtvereniging.nl/vereniging/nieuwsbrief.htm">Click here</a>
+                        <br><br>
+                        <a href="https://www.zoetermeer.nl/inwoners/producten-a-z_45918/product/nieuwsbrieven-aanmelden_1177.html?pk_campaign=Redirects&pk_kwd=nieuwsbrieven">Municipality Zoetermeer</a><a class="button2" target="_blank" href="https://www.zoetermeer.nl/inwoners/producten-a-z_45918/product/nieuwsbrieven-aanmelden_1177.html?pk_campaign=Redirects&pk_kwd=nieuwsbrieven">Click here</a>
+                        <br><br>
+                        <a href="https://zoetermeer.nieuws.nl/nieuwsbrief/">Zoetermeer News</a><a class="button2" target="_blank" href="https://zoetermeer.nieuws.nl/nieuwsbrief/">Click here</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="popup3" id="myPopup3">
+                <div class="popuptext">
+                    <h2>Share this project</h2> <img src="pics/close3.png" class="closeimg" onclick="showShareLinks()">
+                    <p class="bold">Here you will find an overview of share links
+                        <br><br>
+                        <li><a target="blank" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fyannickkok.github.io%2FStadslab-Meerzicht%2Fwinkelcentrum.html">Share on Facebook</a></li>
+                        <li><a target="blank" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fyannickkok.github.io%2FStadslab-Meerzicht%2Fwinkelcentrum.html">Share on Twitter</a></li>
+                        <li><a target="blank" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fyannickkok.github.io%2FStadslab-Meerzicht%2Fwinkelcentrum.html">Share on LinkedIn</a></li>
+                    </p>
+                </div>
+            </div>
+
+
 
             <div class="box3">
                 <img src="pics/en crop.png" class="languagebutton">
@@ -91,19 +133,19 @@ Or use the online form by clicking the button at the bottom right of the page.
 
 
         <footer class="footercontainer">
-            <div class="footerbold1">
+            <div class="footerbold1" onclick="myFunction()">
                 Social Media
             </div>
-            <div class="footerbold1">
-                Newsletters
+            <div class="footerbold1" onclick="showNewsletters()" >
+                Nieuwsbrieven
             </div>
             <div class="footerbold">
-                Address: <br>
+                Adres: <br>
 
                 <p class="footerfar">Albrandswaard 1</p>
             </div>
             <div class="footerbold">
-                Phone number: <br>
+                Telefoonnummer: <br>
 
                 <p class="footerfar">060644115399</p>
             </div>
@@ -113,6 +155,25 @@ Or use the online form by clicking the button at the bottom right of the page.
                 <p class="footerfar">W.burggraaff@hhs.nl</p>
             </div>
         </footer>
+
+        <script>
+            // When the user clicks on div, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");             
+            }
+
+            function showNewsletters() {
+                var popup2 = document.getElementById("myPopup2");
+                popup2.classList.toggle("show");
+            }
+
+            function showShareLinks() {
+                var popup3 = document.getElementById("myPopup3");
+                popup3.classList.toggle("show");
+            }
+
+        </script>
 
     </body>
 

@@ -55,6 +55,37 @@ Our contact information is at the bottom of every page.
 
             </div>
 
+            <div class="popup" id="myPopup">
+                <div class="popuptext" >
+                    <h2>Social Media</h2> <img src="pics/close3.png" class="closeimg" onclick="myFunction()">
+                    
+                    <p class="bold">Here you will find an overview of local social media
+                        <br><br>
+                        <a href="https://nl-nl.facebook.com/gemeentezoetermeer">Zoetermeer Municipality</a><a class="button2" target="_blank" href="https://nl-nl.facebook.com/gemeentezoetermeer">Click here</a>
+                        <br><br>
+                        <a href="https://www.instagram.com/biebzoetermeer/">Zoetermeer Library</a><a class="button2" target="_blank" href="https://www.instagram.com/biebzoetermeer/">Click here</a>
+                        <br><br>
+                        <a href="https://twitter.com/ZoetermeerVndg">Zoetermeer News</a><a class="button2" target="_blank" href="https://twitter.com/ZoetermeerVndg">Click here</a>
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="popup2" id="myPopup2">
+                <div class="popuptext" >
+                    <h2>Nieuwsbrieven</h2> <img src="pics/close3.png" class="closeimg" onclick="showNewsletters()">
+
+                    <p class="bold">Here you will find an overview of local newsletters
+                        <br><br>
+                        <a href="http://www.waterbuurtvereniging.nl/vereniging/nieuwsbrief.htm">Waterbuurt residents association</a><a class="button2" target="_blank" href="http://www.waterbuurtvereniging.nl/vereniging/nieuwsbrief.htm">Click here</a>
+                        <br><br>
+                        <a href="https://www.zoetermeer.nl/inwoners/producten-a-z_45918/product/nieuwsbrieven-aanmelden_1177.html?pk_campaign=Redirects&pk_kwd=nieuwsbrieven">Municipality Zoetermeer</a><a class="button2" target="_blank" href="https://www.zoetermeer.nl/inwoners/producten-a-z_45918/product/nieuwsbrieven-aanmelden_1177.html?pk_campaign=Redirects&pk_kwd=nieuwsbrieven">Click here</a>
+                        <br><br>
+                        <a href="https://zoetermeer.nieuws.nl/nieuwsbrief/">Zoetermeer News</a><a class="button2" target="_blank" href="https://zoetermeer.nieuws.nl/nieuwsbrief/">Click here</a>
+                    </p>
+                </div>
+            </div>
+
             <div class="box3">
                 <img src="pics/en crop.png" class="languagebutton">
                 <select class="languageselect" id="langselect" onChange="window.location.href=this.value">
@@ -77,10 +108,10 @@ Our contact information is at the bottom of every page.
 
 
         <footer class="footercontainer">
-            <div class="footerbold1">
+            <div class="footerbold1" onclick="myFunction()">
                 Social Media
             </div>
-            <div class="footerbold1">
+            <div class="footerbold1" onclick="showNewsletters()">
                 Newsletters
             </div>
             <div class="footerbold">
@@ -99,6 +130,23 @@ Our contact information is at the bottom of every page.
                 <p class="footerfar">W.burggraaff@hhs.nl</p>
             </div>
         </footer>
+
+        <script>
+            // When the user clicks on div, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              
+              popup.classList.toggle("show");
+              
+
+
+            }
+            function showNewsletters() {
+                var popup2 = document.getElementById("myPopup2");
+                popup2.classList.toggle("show");
+
+            }
+        </script>
 
     </body>
 
