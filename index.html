@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link type="text/css" href="style.css" rel="stylesheet" />	
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box1">
+                <h1>Stadslab Meerzicht</h1>
+            </div>
+
+
+
+            <div class="box2">
+                <p class="bold">Wat is het stadslab?</p>
+
+                <p>Een manier waarop bewoners van de wijk Meerzicht samen komen om knelpunten aan te kaarten en aan ideeën te werken.
+
+                </p>
+
+                <p class="bold">Wie doen hier aan mee?</p>
+
+                <p>Bewoners, professionals en lokale ondernemers werken samen met studenten en docenten van nabije scholen. Samen werken we aan de wijk.
+
+                </p>
+                
+                <p class="bold">Hoe kan ik meedoen?</p>
+
+                <p>Via deze site kun je met het stadslab communiceren.<br>
+
+                    Daarnaast kun je ons ook telefonisch of per mail bereiken.<br>
+                    
+                    Onze contact informatie staat onderaan elke pagina.
+                </p>
+                
+                <p class="bold">Heb jij ook een goed idee voor het Stadslab van Meerzicht? <button type="button" ><a href="projectaanmelden.html">Klik hier!</a></button></p>
+                <br><br>
+                
+
+                <p class="bold">Wil je meedoen met een project of de projecten bekijken? <button type="button"><a href="projecten.html">Klik hier!</a></button></p>
+                <br><br>
+
+                <p class="bold">Wil je meer informatie over het stadslab of de wijk Meerzicht? <button type="button"><a href="informatie.html">Klik hier!</a></button></p>
+                
+
+
+            </div>
+            <div class="popup" id="myPopup">
+                <div class="popuptext" >
+                    <h2>Social Media</h2> <img src="pics/close3.png" class="closeimg" onclick="myFunction()">
+                    
+                    <p class="bold">Hier vind je een overzicht van Meerzichtse social media:
+                        <br><br>
+                        <a href="https://nl-nl.facebook.com/gemeentezoetermeer">Gemeente Zoetermeer</a><a class="button2" target="_blank" href="https://nl-nl.facebook.com/gemeentezoetermeer">Klik hier</a>
+                        <br><br>
+                        <a href="https://www.instagram.com/biebzoetermeer/">Bibliotheek Zoetermeer</a><a class="button2" target="_blank" href="https://www.instagram.com/biebzoetermeer/">Klik hier</a>
+                        <br><br>
+                        <a href="https://twitter.com/ZoetermeerVndg">Zoetermeer Nieuws</a><a class="button2" target="_blank" href="https://twitter.com/ZoetermeerVndg">Klik hier</a>
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="popup2" id="myPopup2">
+                <div class="popuptext" >
+                    <h2>Nieuwsbrieven</h2> <img src="pics/close3.png" class="closeimg" onclick="showNewsletters()">
+
+                    <p class="bold">Hier vind je een overzicht van Meerzichtse nieuwsbrieven.
+                        <br><br>
+                        <a href="http://www.waterbuurtvereniging.nl/vereniging/nieuwsbrief.htm">Waterbuurtvereniging</a><a class="button2" target="_blank" href="http://www.waterbuurtvereniging.nl/vereniging/nieuwsbrief.htm">Klik hier</a>
+                        <br><br>
+                        <a href="https://www.zoetermeer.nl/inwoners/producten-a-z_45918/product/nieuwsbrieven-aanmelden_1177.html?pk_campaign=Redirects&pk_kwd=nieuwsbrieven">Gemeente Zoetermeer</a><a class="button2" target="_blank" href="https://www.zoetermeer.nl/inwoners/producten-a-z_45918/product/nieuwsbrieven-aanmelden_1177.html?pk_campaign=Redirects&pk_kwd=nieuwsbrieven">Klik hier</a>
+                        <br><br>
+                        <a href="https://zoetermeer.nieuws.nl/nieuwsbrief/">Zoetermeer Nieuws</a><a class="button2" target="_blank" href="https://zoetermeer.nieuws.nl/nieuwsbrief/">Klik hier</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="box3">
+                <img src="pics/nl crop.png" class="languagebutton">
+                <select class="languageselect" id="langselect" onChange="window.location.href=this.value">
+                    <option value="index.html">Nederlands (NL)</option>
+                    <option value="en.html">English (EN)</option>
+
+
+
+                </select>
+
+
+            </div>
+        
+        
+
+
+        </div>
+
+
+
+        <footer class="footercontainer">
+            <div class="footerbold1" onclick="myFunction()">
+                Social Media
+            </div>
+            <div class="footerbold1" onclick="showNewsletters()" >
+                Nieuwsbrieven
+            </div>
+            <div class="footerbold">
+                Adres: <br>
+
+                <p class="footerfar">Albrandswaard 1</p>
+            </div>
+            <div class="footerbold">
+                Telefoonnummer: <br>
+
+                <p class="footerfar">060644115399</p>
+            </div>
+            <div class="footerbold">
+                Email: <br>
+
+                <p class="footerfar">W.burggraaff@hhs.nl</p>
+            </div>
+        </footer>
+
+        <script>
+            // When the user clicks on div, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              
+              popup.classList.toggle("show");
+              
+
+
+            }
+            function showNewsletters() {
+                var popup2 = document.getElementById("myPopup2");
+                popup2.classList.toggle("show");
+
+            }
+        </script>
+
+    </body>
+
+</html>
